@@ -59,9 +59,9 @@ class GenerateInviteLinkView(APIView):
         )
         
         return Response({
-            "invite_link":f"https/token={invite.token}"
-        })
-
+    "invite_link": f"https://pick2win-f.vercel.app/register?token={invite.token}",
+    "token": invite.token
+})
     
 
 
